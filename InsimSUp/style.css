@@ -1,0 +1,452 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(./img/kenny-eliason-1-aA2Fadydc-unsplash.jpg) ;
+  background-position: center;
+  background-size: cover;
+  position:relative;
+}
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav h2{
+  position: relative;
+  font-family: "Avenir Next", sans-serif;
+  font-weight: 700;
+  font-size: 29px;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 0.05em;
+  display: inline-block;
+  color: blue;
+}
+nav h2 span{
+  color: aliceblue;
+  font-size: 20px;
+}
+.links{
+  flex: 1;
+  text-align: right;
+}
+.links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.links ul li a{
+  
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 16px;
+  cursor:pointer;
+}
+.links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color:darkblue;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.links ul li:hover::after{
+  width: 100%;
+}
+.text_box{
+  width: 90%;
+  color: #fff;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text_box h1{
+  font-size: 50px;
+}
+.text_box p{
+  margin: 10px 0px 40px;
+  font-size:14px;
+  color:#fff;
+}
+.button{
+  position: relative;
+  padding: 1em 1.5em;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+  margin: 1em 0.8em;}
+
+.type3{
+color: #FFF ;
+}
+
+
+.type3::after,
+.type3::before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  border: 2px solid;
+  transition: all 0.6s ease;
+  border-radius: 2px;}
+
+.type3::after{ bottom: 0;
+  right: 0;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: #ffffff;
+  border-right-color: #ffffff;}
+ 
+
+.type3::before{top: 0;
+  left: 0;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: #fafafb;
+  border-left-color:#fdfdfd;}
+  
+
+.type3:hover:after,
+.type3:hover:before{
+  
+  border-bottom-color: #435a6b;
+  border-right-color: #435a6b;
+  border-top-color: #435a6b;
+  border-left-color: #435a6b;
+  width: 100%;
+  height: 100%;font-size:29px;
+}
+.type33{
+  margin-top:305px ;
+  color: #FFF ;
+  }
+  
+  
+  .type33::after,
+  .type33::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border: 2px solid;
+    transition: all 0.6s ease;
+    border-radius: 2px;}
+  
+  .type33::after{ bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: #ffffff;
+    border-right-color: #ffffff;}
+   
+  
+  .type33::before{top: 0;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-color: #fafafb;
+    border-left-color:#fdfdfd;}
+    
+  
+  .type33:hover:after,
+  .type33:hover:before{
+    
+    border-bottom-color: #435a6b;
+    border-right-color: #435a6b;
+    border-top-color: #435a6b;
+    border-left-color: #435a6b;
+    width: 100%;
+    height: 100%;font-size:29px;
+  }
+nav .fa{
+  display: none;
+}
+@media(max-width:700px){
+  .text_box h1{
+    font-size: 30px;
+  }
+  .links ul li{
+    display: block;
+  }
+  .links {
+    position:absolute;
+    background-color: blue;
+    height: 100vh;
+    width: -250px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 1;
+    transition: 1s;
+  }
+  nav .fa{
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .links ul{
+    padding: 30px ;
+  }
+}
+/*******************                          ******/
+.about{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.about_col img{
+  width: 40%;
+  border-radius:11px;
+}
+.about_col{
+  margin-top: 5%;
+  display: flex;
+  
+}
+.description p{
+  align-items: flex-start;
+  text-align: left;
+}
+.description p span{
+  text-align: left;
+
+}
+
+  .about_col h3{
+    margin-top:15px;
+    text-align: left;
+  }
+
+
+h1{
+  font-size: 36px;
+  font-weight: 600;
+}
+p{
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+.Formation{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+  background-color: rgba(245, 245, 245, 0.8);
+}
+.row{
+  margin-top:5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.formation_col{
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.formation_col img{
+  width: 100%;
+}
+.layer{
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-transform:hidden;
+  transition: 0.5s;
+}
+.layer:hover{
+  background: rgba(0, 0, 226, 0.5);
+ 
+}
+.layer p{
+  padding-top: 25px;
+  font-size: 20px;
+  font-weight: 500;
+  color:#ffffff;
+}
+.layer h3{
+  width: 100%;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position:absolute;
+}
+h3{
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.formation_col:hover{
+  box-shadow: 0 0 20px 0px rgba(0,0, 0, 0.3);
+}
+
+@media(max-width:700px){
+  .row{
+    flex-direction: column;
+  }
+  
+}
+
+
+.feedback{
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+  background-color: rgba(245, 245, 245, 0.8);
+}
+.feedback_col{
+  flex-basis: 44%;
+  border-radius: 15px;
+  margin-bottom: 5%;
+  text-align: left;
+  background-color: #fff3f3;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+}
+.feedback_col img{
+  height: 40px;
+  margin-left: 5px;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+.feedback_col p{
+  padding: 0;
+}
+.feedback_col h3{
+  margin-top:15px;
+  text-align: left;
+}
+.feedback_col .fa{
+  color: #f44336;
+}
+
+.agrement{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+  background-color: rgba(245, 245, 245, 0.8);
+}
+.agrement-col{
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  position: relative;
+ overflow: hidden;
+  transition: 0.5s;
+}
+.agrement-col img{
+  width: 100%;
+  border-radius: 10px;
+}
+.layer2{
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-transform:hidden;
+  transition: 0.5s;
+}
+.layer2:hover{
+  background: rgba(0, 0, 226, 0.7);
+ 
+}
+.layer2 h3{
+  width: 100%;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position:absolute;
+  transition: 0.5s;
+}
+.layer2:hover h3{
+  bottom: 49%;
+  opacity: 2;
+}
+@media (max-width:700px) {
+  .layer p{
+    padding-top: 10px;}
+    .type33{
+      margin-top:260px ;
+      color: #FFF ;
+      }
+      .feedback_col img{
+        margin-left:0px ;
+        margin-right: 15px;
+       
+      }
+}
+.contactUs{
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./img/kenny-eliason-1-aA2Fadydc-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+   text-align: center;
+   padding: 100px 0;
+}
+.contactUs h1{
+  color: #fff;
+  margin-bottom: 40px;
+  padding: 0;
+
+}
+@media (max-width:700px){
+  .contactUs h1{
+    font-size:24px ;
+
+  }
+}
+.footer{width: 100%;
+  text-align: center;
+  padding: 30px 0;
+
+}
+.footer h4{
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.icons .fa{
+  color: #364ff4;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
